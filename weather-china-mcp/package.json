@@ -1,0 +1,46 @@
+{
+  "name": "weather-china-mcp",
+  "version": "1.0.2",
+  "description": "中国天气网（weather.com.cn）MCP 服务器，提供实时天气和 15 天预报。无需 API Key。",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "README.md"
+  ],
+  "bin": {
+    "weather-china-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": {
+    "name": "zaixiamaomaoyu",
+    "email": "1143962543@qq.com",
+    "url": "https://github.com/zaixiamaomaoyu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaixiamaomaoyu/weather-china-mcp.git"
+  },
+  "homepage": "https://github.com/zaixiamaomaoyu/weather-china-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/zaixiamaomaoyu/weather-china-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "weather",
+    "中国天气网",
+    "weather.com.cn",
+    "forecast",
+    "china"
+  ],
+  "license": "MIT"
+}

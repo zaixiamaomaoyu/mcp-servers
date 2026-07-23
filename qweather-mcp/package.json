@@ -1,0 +1,21 @@
+﻿{
+  "name": "qweather-mcp",
+  "version": "1.0.0",
+  "description": "MCP Weather Server using wttr.in",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "qweather-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

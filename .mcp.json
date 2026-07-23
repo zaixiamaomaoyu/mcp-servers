@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "openmeteo": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "open-meteo-mcp-server"]
+    },
+    "qweather": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./qweather-mcp/src/index.js"]
+    },
+    "weather-china": {
+      "type": "stdio",
+      "command": "weather-china-mcp"
+    }
+  }
+}
