@@ -1,14 +1,46 @@
 # 中国天气网 MCP 服务
 
-基于中国天气网（[weather.com.cn](http://www.weather.com.cn)）的 MCP 服务器，提供实时天气和 5 天预报查询。
+[![npm version](https://img.shields.io/npm/v/weather-china-mcp)](https://www.npmjs.com/package/weather-china-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/weather-china-mcp)](https://www.npmjs.com/package/weather-china-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+基于中国天气网（[weather.com.cn](http://www.weather.com.cn)）的 MCP 服务器，提供实时天气和 5 天预报查询。兼容 Claude Desktop、Claude Code、Cursor、Cline、Windsurf、OpenCode 等 AI 工具。
 
 > 直接调用中国天气网官方接口，**无需 API Key**，免费使用。
 
-## 安装
+## 快速安装（npm）
 
 ```bash
-cd weather-china-mcp
-npm install
+# 全局安装
+npm install -g weather-china-mcp
+```
+
+然后在你的 MCP 客户端配置中添加：
+
+```json
+{
+  "mcpServers": {
+    "weather-china": {
+      "type": "stdio",
+      "command": "weather-china-mcp",
+      "args": []
+    }
+  }
+}
+```
+
+或者直接用 npx（无需全局安装）：
+
+```json
+{
+  "mcpServers": {
+    "weather-china": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "weather-china-mcp"]
+    }
+  }
+}
 ```
 
 ## 配置

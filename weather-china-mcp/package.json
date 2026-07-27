@@ -1,19 +1,22 @@
 {
   "name": "weather-china-mcp",
-  "version": "1.0.2",
-  "description": "中国天气网（weather.com.cn）MCP 服务器，提供实时天气和 15 天预报。无需 API Key。",
+  "version": "1.0.4",
+  "description": "MCP server for China weather (weather.com.cn) — real-time weather, 5-day forecast, air quality. No API Key required. Works with Claude Desktop, Claude Code, Cursor, Cline, Windsurf, OpenCode.",
   "type": "module",
   "main": "src/index.js",
   "files": [
     "src/",
-    "README.md"
+    "city-codes-complete.json",
+    "README.md",
+    "LICENSE"
   ],
   "bin": {
     "weather-china-mcp": "src/index.js"
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "dev": "node --watch src/index.js",
+    "test": "vitest run"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0"
@@ -36,11 +39,33 @@
   },
   "keywords": [
     "mcp",
+    "mcp-server",
+    "model-context-protocol",
     "weather",
+    "weather-forecast",
+    "china-weather",
     "中国天气网",
     "weather.com.cn",
     "forecast",
-    "china"
+    "china",
+    "claude",
+    "claude-desktop",
+    "claude-code",
+    "cursor",
+    "cline",
+    "windsurf",
+    "opencode",
+    "ai",
+    "llm",
+    "air-quality",
+    "pm25",
+    "aqi",
+    "no-api-key",
+    "free",
+    "realtime-weather"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^4.1.10"
+  }
 }
